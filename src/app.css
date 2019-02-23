@@ -1,0 +1,109 @@
+.app {
+  display: flex;
+  flex-direction: column;
+}
+
+.resume {
+  opacity: 0.1;
+  transition: opacity 500ms ease-in-out;
+}
+
+.pause {
+  opacity: 1;
+  transition: opacity 500ms ease-in-out;
+}
+
+.content {
+  white-space: pre-line;
+  color: #979797;
+  padding: 2em;
+  text-align: justify;
+}
+
+.read-word {
+  color: #353535;
+  font-size: 3em;
+  height: 2em;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  background: none;
+  border: none;
+  justify-content: center;
+  margin: 0;
+  padding: 2em 0;
+}
+
+.word {
+  display: contents;
+  border: none;
+  margin: 0;
+  padding: 0;
+  background: none;
+}
+
+.current-word {
+  color: #717171;
+}
+
+.pause .current-word {
+  color: #464646;
+  text-shadow: 0 0 .2px #464646, 0 0 .2px #464646;
+}
+
+.word:hover {
+  cursor: pointer;
+  color: #464646;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.stats {
+  margin-top: 1em;
+  line-height: 1.5em;
+  text-align: center;
+  display: flex;
+  font-size: 0.7em;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.stats .value {
+  font-weight: bold;
+}
+
+.input-text {
+  width: calc(100% - 2em);
+  padding: 1em;
+  margin: 1em;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 1em;
+  background: none;
+  margin: 0 1em;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.stats button,
+.actions button {
+  box-shadow: 1px 1px 5px -4px #8a8a8a;
+  border: 1px solid #E4E4E4;
+}
+
+.actions {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.btn-resume {
+  width: calc(100% - 10em);
+  max-width: 50em;
+}
